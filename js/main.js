@@ -67,13 +67,17 @@ var gameData = {
     ],
     'moveHistory' : [
         {
-            'who'       : [0, 5],
-            'action'    : 'move',
-            'delta'     : [1, 0]    // moves to the right
+            'who'       : [1, 1],
+            'what'      : 'move',
+            'where'     : [0, 1]    // moves to the right
         },
         {
-            
+            'who'       : [1, 5],
+            'what'      : 'move',
+            'where'     : [0, -1]    // moves to the right
         }
         //...
     ]
 }
+
+new Game()

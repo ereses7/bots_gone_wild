@@ -14,7 +14,7 @@ body { margin: 0px; background-color: #ddd; }
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
-#container { width : 1366px; margin: 0px auto; background-color: #fff; }
+#container { width : 1351px; margin: 0px auto; background-color: #fff; }
 
 #container #start_match { font-size: 20px; }
 
