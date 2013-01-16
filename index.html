@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="dark">
+    <head>
+    	<title>Bots Gone Wild</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.EventEmitter.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Canvas.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Grid.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Matrix.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/ereses7/rss.js/master/Rss.Random.js"></script>
+        
+        <script type="text/javascript" defer="defer" src="js/game.js"></script>
+        <script type="text/javascript" defer="defer" src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="details-section" class="pw50 fleft">
+                <h4>Players</h4>
+                <div id="players-section">
+                    <table id="players-table" border="1" class="pw100">
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>Player name</th>
+                                <th>Player API</th>
+                                <th>Won Matches</th>
+                                <th>Lost Matches</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input class="selected" type="checkbox" /></td>
+                                <td>Koala botz</td>
+                                <td>http://<input class="api_url" type="text" /></td>
+                                <td>0</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td><input class="selected" type="checkbox" /></td>
+                                <td>Peti Botz</td>
+                                <td>http://<input class="api_url" type="text" /></td>
+                                <td>1</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td><input class="selected" type="checkbox" /></td>
+                                <td>Mihai boti</td>
+                                <td>http://<input class="api_url" type="text" /></td>
+                                <td>19</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><input class="selected" type="checkbox" /></td>
+                                <td>Sebi boti</td>
+                                <td>http://<input class="api_url" type="text" /></td>
+                                <td>19</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br />
+                <button id="start_match">Fight!</button>
+                
+                <h4>Match history</h4>
+                
+                <div id="match-section">
+                    <table id="match-table" border="1" class="pw100">
+                        <thead>
+                            <tr>
+                                <th>Player 1</th>
+                                <th></th>
+                                <th>Player 2</th>
+                                <th>Map</th>
+                                <th>Winner</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                            <tr>
+                                <td>Koala botz</td>
+                                <td>vs.</td>
+                                <td>Sebi botz</td>
+                                <td>default</td>
+                                <td>Sebi botz</td>
+                                <td><a href="javascript:void(0);">Watch Now</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="game_section" class="pw50 fright">
+                <h3>Match Preview</h3>
+            </div>
+            
+            <div class="clearfix">&nbsp;</div>
+            
+            <div id="settings-section" class="pw100">
+                <h4>Settings</h4>
+                <table id="settings-table" border="1" class="pw50">
+                    <tr>
+                        <td>Number of bots:</td>
+                        <td><input id="bot_nember" value="5" /></td>
+                    </tr>
+                    <tr>
+                        <td>Map:</td>
+                        <td>
+                            <select id="map">
+                                <option selected="selected" value="default">default</option>
+                                <option value="de_dust2">de_dust2</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
